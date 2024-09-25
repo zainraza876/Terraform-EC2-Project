@@ -3,24 +3,24 @@ pipeline {
     agent any
 
     stages {
-        stage('Terraform Init") {
+        stage('Terraform Init') {
             steps {
                 sh 'terraform init'
             }
         }
 
-           stage('Terraform Validate") {
+           stage('Terraform Validate') {
             steps {
                 sh 'terraform validate'
             }
         }
       
-    stage('Terraform Plan") {
+    stage('Terraform Plan') {
             steps {
                 sh 'terraform plan'
             }
         }
-          stage('Terraform Apply") {
+          stage('Terraform Apply') {
             steps {
                 sh 'terraform apply'
             }
