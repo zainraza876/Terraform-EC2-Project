@@ -3,7 +3,7 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 4.16"
-      ACCESS KEY = "AKIA5K7BKYT7WJZXHMEA"
+      ACCESS_KEY = "AKIA5K7BKYT7WJZXHMEA"
       
     }
   }
