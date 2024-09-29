@@ -3,9 +3,7 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 4.16"
-      ACCESS_KEY = "AKIA5K7BKYT776AX5MEW"
-      SECRET_ACCESS_KEY = "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"
-      
+       
     }
   }
 
@@ -14,8 +12,8 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
- ACCESS_KEY = "AKIA5K7BKYT776AX5MEW"
- SECRET_ACCESS_KEY = "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"
+ access_key = "AKIA5K7BKYT776AX5MEW"
+ secret_key = "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"
 
 }
 
