@@ -3,7 +3,8 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 4.16"
-      ACCESS_KEY = "AKIA5K7BKYT7WJZXHMEA"
+      ACCESS_KEY = "AKIA5K7BKYT776AX5MEW"
+      SECRET_ACCESS_KEY = "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"
       
     }
   }
@@ -13,7 +14,12 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
+ ACCESS_KEY = "AKIA5K7BKYT776AX5MEW"
+ SECRET_ACCESS_KEY = "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"
+
 }
+
+
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0e86e20dae9224db8"
